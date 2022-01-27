@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+
+    &:after {
+        box-sizing: border-box;
+    }
+
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    padding-left: 10px;
+}
+
+nav {
+    a {
+        position: relative;
+        display: inline-block;
+        margin: 15px 0px;
+        outline: none;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+        font-family: "Source Code Pro", monospace;
+        font-size: 18px;
+
+        &:hover {
+            outline: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.cl-effect-1 {
+    a {
+        &::before {
+            display: inline-block;
+            opacity: 0;
+            transition: transform 0.3s, opacity 0.2s;
+            content: "[";
+            transform: translateX(20px);
+        }
+
+        &::after {
+            display: inline-block;
+            opacity: 0;
+            transition: transform 0.3s, opacity 0.2s;
+            content: "]";
+            transform: translateX(-20px);
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+
+            &::after {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+        &:focus {
+            &::before {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+
+            &::after {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+    }
+}
+
+.header {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 82px;
+    margin-top: 1.2em;
+}
+
+.info {
+    font-family: "Source Code Pro", monospace;
+    font-size: 18px;
+    max-width: 750px;
+
+    a {
+        &:link {
+            color: white;
+        }
+
+        &:visited {
+            color: white;
+        }
+    }
+}
+
+.info-comment {
+    color: #ffa500;
+}
+
+.content {
+    margin: 20px;
+    font-family: "Source Code Pro", monospace;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+
+    &::before {
+        display: inline-block;
+        opacity: 0;
+        transition: transform 0.3s, opacity 0.2s;
+        content: "[";
+        transform: translateX(20px);
+    }
+
+    &::after {
+        display: inline-block;
+        opacity: 0;
+        transition: transform 0.3s, opacity 0.2s;
+        content: "]";
+        transform: translateX(-20px);
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+
+        &::after {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    &:focus {
+        &::before {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+
+        &::after {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}
+
+.credits {
+    position: absolute;
+    margin: 10px;
+    top: 10;
+    bottom: 0;
+    right: 10px;
+    font-family: "Source Code Pro", monospace;
+
+    a {
+        &:link {
+            color: white;
+        }
+
+        &:visited {
+            color: white;
+        }
+    }
+}
+
+.link {
+    &:active {
+        color: gray;
+        color: gray;
+    }
+
+    &:link {
+        color: white;
+    }
+
+    &:visited {
+        color: white;
+    }
+}
+
+.logos img {
+    margin: 10px;
+}

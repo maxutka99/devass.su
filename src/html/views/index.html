@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <%= require("../includes/header.html").default %>
+
+    <style>
+        body {
+            background: #8e78a8;
+            background: linear-gradient(to right, #8e78a8 0%, #92a4db 100%);
+            color: #fff;
+        }
+    </style>
+
+    <title>/dev/ass</title>
+</head>
+
+<body>
+    <%= require("../includes/nav.html").default %>
+
+    <main>
+        <div class="header">/dev/ass</div>
+        <div class="info">
+            <div class="info-comment">// Русскоязычное сообщество посвященное свободному ПО</div>
+            <div class="info-comment">// Будь свободным!</div>
+            <p>Общаемся мы в Discord (пока что) про всякую всячину связанную с свободным ПО и прочим. Также мы создали некоторые проекты.</p>
+            <p>Наши проекты:</p>
+            <ul>
+                <li><a href="https://upload.devass.su">/dev/ass/upload</li>
+                <li><a href="https://nowindows.su/ru">nowindows.su</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <%= require("../includes/footer.html").default %>
+</body>

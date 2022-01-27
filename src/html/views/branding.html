@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <%= require("../includes/header.html").default %>
+
+    <style>
+        body {
+            background: #8e78a8;
+            background: linear-gradient(to right, #bf6b00 0%, #ff8f00 100%);
+            color: #fff;
+        }
+    </style>
+
+    <title>/dev/ass - Брендинг</title>
+</head>
+
+<body>
+    <%= require("../includes/nav.html").default %>
+
+    <main>
+        <div class="header">Брединг</div>
+        <div class="info">
+            Логотип /dev/ass - кот из пасхалки Android Nougat (исторически так сложилось). Цвет - #ff8f00
+            <p>Он распространяется по лицензии <a href="https://cs.android.com/android/platform/superproject/+/master:frameworks/base/packages/SystemUI/NOTICE">Apache License Version 2.0</a> и преднадлежит Google.</p>
+            <div class="logos">
+                <img src="/assets/logo.webp" width="150">
+                <img src="/assets/logoWithBackground.webp" width="150">
+            </div>
+            <p>Также вы можете скачать архивчик в котором есть эти логотипы в PNG, и ещё немного котов.</p>
+            <a class="button" href="/assets/cats.tar.gz">Скачать</a>
+        </div>
+    </main>
+
+    <%= require("../includes/footer.html").default %>
+</body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <%= require("../includes/header.html").default %>
+
+    <style>
+        body {
+            background: #CD5C5C;
+            background: linear-gradient(to right, #ca4040 0%, #CD5C5C 100%);
+            background-size: 200% 200%;
+            animation: gradient 30s ease-in-out infinite;
+            color: #fff;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+    
+    <title>/dev/ass - Ашибка 404</title>
+</head>
+
+<body>
+    <%= require("../includes/nav.html").default %>
+
+    <main>
+        <div class="header">404</div>
+        <div class="info">
+            <div class="info-comment">// Gentoo hack???</div>
+            <p>Мы переискали все, но не нашли нужную вам страницу. Представьте банан сочуствия, откинтесь на спинку табуретки и насладитесь нашим градиентом.</p>
+        </div>
+    </main>
+
+    <%= require("../includes/footer.html").default %>
+</body>
