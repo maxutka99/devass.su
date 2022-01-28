@@ -11,8 +11,15 @@
 }
 
 body {
+    min-height: 98vh;
     padding-left: 10px;
     position: relative;
+}
+
+body::after {
+    content: "";
+    display: block;
+    height: 20px;
 }
 
 nav {
