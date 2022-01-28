@@ -12,6 +12,7 @@
 
 body {
     padding-left: 10px;
+    position: relative;
 }
 
 nav {
@@ -159,9 +160,8 @@ nav {
     }
 }
 
-.credits {
+footer {
     position: absolute;
-    margin: 10px;
     top: 10;
     bottom: 0;
     right: 10px;
